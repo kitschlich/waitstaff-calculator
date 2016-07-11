@@ -1,0 +1,73 @@
+.container {
+    width: 735px;
+    margin: 0 auto;
+}
+.main-heading {
+    text-align: center;
+    font-size: 3em;
+}
+
+.meal-details {
+    float: left;
+    border: 2px solid black;
+    width: 350px;
+}
+
+.meal-details h2, .customer-charges h2, .earnings-info h2 {
+    display: block;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-bottom: .5em;
+}
+
+.meal-details form {
+    margin: 3em 2em 1em;
+    font-size: 1.3em;
+}
+
+.meal-details input {
+    margin-bottom: 2em;
+    font-size: .8em;
+}
+
+.form-controls {
+    margin: 17px auto 0;
+    width: 55%;
+}
+
+.form-control {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    font-size: .8em;
+}
+
+.customer-charges, .earnings-info {
+    float: right;
+    width: 350px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.customer-charges {
+    margin-bottom: 1.5em;
+}
+
+.reset {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.reset button {
+    font-size: 1.2em;
+    float: right;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

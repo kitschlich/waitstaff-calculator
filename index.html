@@ -7,16 +7,18 @@
     <title>Waitstaff Calculator</title>
 </head>
 <body ng-controller="MainCtrl as vm">
-    <div class="container">
+    <div class="container group">
         <h1 class="main-heading">Waitstaff Calculator</h1>
         <section class="meal-details">
             <h2>Enter the Meal Details</h2>
             <form name="mealDetails" novalidate ng-submit="submit()">
-                <label>Base Meal Price: $</label><input type="text" name="mealPrice" ng-model="vm.mealDetails.mealPrice" /></label>
-                <label>Tax Rate: %</label><input type="text" name="taxRate" ng-model="vm.mealDetails.taxRate" /></label>
-                <label>Tip Percentage: %</label><input type="text" name="tipPercentage" ng-model="vm.mealDetails.tipPercentage" /></label>
-                <input type="submit" value="Submit" />
-                <button name="cancel" ng-click="cancel()">Cancel</button>
+                <label>Base Meal Price: $</label><input type="text" name="mealPrice" ng-model="vm.mealDetails.mealPrice" /></label><br>
+                <label>Tax Rate: %</label><input type="text" name="taxRate" ng-model="vm.mealDetails.taxRate" /></label><br>
+                <label>Tip Percentage: %</label><input type="text" name="tipPercentage" ng-model="vm.mealDetails.tipPercentage" /></label><br>
+                <div class="form-controls">
+                    <input type="submit" value="Submit" class="form-control" />
+                    <button name="cancel" ng-click="cancel()" class="form-control">Cancel</button>
+                </div>
             </form>
         </section>
         <section class="customer-charges">
@@ -31,7 +33,9 @@
             <h3>Meal Count: {{vm.earnings.mealCount}}</h3>
             <h3>Average Tip Per Meal: {{vm.earnings.tipPerMeal | currency}}</h3>
         </section>
-        <button class="reset" ng-click="reset()">Reset</button>
+    </div>
+    <div class="reset">
+        <button ng-click="reset()">Reset</button>
     </div>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
